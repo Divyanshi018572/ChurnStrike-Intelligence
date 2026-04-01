@@ -1,0 +1,6 @@
+{
+  "best_for_accuracy": "catboost_tuned",
+  "best_for_recall": "random_forest_tuned",
+  "best_for_f1": "random_forest_tuned",
+  "best_for_auc": "catboost_tuned"
+}
