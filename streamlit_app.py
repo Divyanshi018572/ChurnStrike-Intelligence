@@ -106,7 +106,7 @@ MODEL_EXPLANATIONS = {
 
 def load_artifacts():
     if not MODEL_PATH.exists():
-        st.error("Model not found. Run: $env:PYTHONPATH='src'; c:/python314/python.exe run_pipeline.py")
+        st.error("Model not found. Generate artifacts by running: PYTHONPATH=src python run_pipeline.py")
         st.stop()
 
     recommendations = {}

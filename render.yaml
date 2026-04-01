@@ -3,7 +3,7 @@ services:
     name: churnstrike-intelligence
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && PYTHONPATH=src python run_pipeline.py
     startCommand: streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
     envVars:
       - key: PYTHONPATH
